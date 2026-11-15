@@ -1,0 +1,30 @@
+# pyproject.toml: package metadata and dependencies for fraudiu (Track 2 submission,
+# Lexsi AI Safety and Alignment Hackathon 2026).
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraudiu"
+version = "0.1.0"
+description = "LatAm Spanish financial-fraud safety benchmark for Tiny Aya, with SafeTune refusal steering measured by AuditKIT"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT (code); CC BY-NC 4.0 (data)" }
+dependencies = [
+  "curatorkit>=0.2",
+  "safetune>=0.1.8",
+  "auditkit>=1.1",
+  "transformers>=4.56",
+  "accelerate",
+  "safetensors",
+  "huggingface_hub>=0.30",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+quant = ["bitsandbytes>=0.45"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["fraudiu"]

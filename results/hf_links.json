@@ -1,0 +1,6 @@
+{
+  "dataset": "https://huggingface.co/datasets/alej0-o/fraudiu-latam-fraud-safety",
+  "model": "https://huggingface.co/alej0-o/fraudiu-tiny-aya-refusal-steering",
+  "model_collection": "https://huggingface.co/collections/alej0-o/fraudiu-latam-spanish-fraud-safety-for-tiny-aya-models-6af91f1006eee63526d710fd",
+  "dataset_collection": "https://huggingface.co/collections/alej0-o/fraudiu-latam-spanish-fraud-safety-for-tiny-aya-datasets-6af91f106a5b1af4d98cf53a"
+}

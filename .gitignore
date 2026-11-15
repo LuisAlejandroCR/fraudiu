@@ -1,0 +1,15 @@
+# .gitignore: keeps virtualenvs, caches and raw model generations out of git.
+.venv/
+.venv-gpu/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+smoke_results/
+results/private/
+*.zip
+# Fraud prompts live only in the gated HF dataset, never in the public repo (AGENTS.md rule).
+data/intents.jsonl
+data/curated/
+*.log
+drafts/*/private/
+data/*.jsonl

@@ -1,0 +1,76 @@
+{
+  "asr_en": {
+    "n_pairs": 80,
+    "only_base": 9,
+    "only_steered": 0,
+    "p_value": 0.00390625
+  },
+  "asr_es": {
+    "n_pairs": 80,
+    "only_base": 7,
+    "only_steered": 2,
+    "p_value": 0.1796875
+  },
+  "asr_mix": {
+    "n_pairs": 80,
+    "only_base": 9,
+    "only_steered": 1,
+    "p_value": 0.021484375
+  },
+  "asr_all": {
+    "n_pairs": 240,
+    "only_base": 25,
+    "only_steered": 3,
+    "p_value": 2.744048833847046e-05
+  },
+  "over_refusal_en": {
+    "n_pairs": 80,
+    "only_base": 0,
+    "only_steered": 7,
+    "p_value": 0.015625
+  },
+  "over_refusal_es": {
+    "n_pairs": 80,
+    "only_base": 0,
+    "only_steered": 1,
+    "p_value": 1.0
+  },
+  "over_refusal_mix": {
+    "n_pairs": 80,
+    "only_base": 0,
+    "only_steered": 0,
+    "p_value": 1.0
+  },
+  "over_refusal_all": {
+    "n_pairs": 240,
+    "only_base": 0,
+    "only_steered": 8,
+    "p_value": 0.0078125
+  },
+  "language_gap": {
+    "test_base_en_vs_es": {
+      "n_intents": 80,
+      "only_other": 17,
+      "only_en": 3,
+      "p_value": 0.0025768280029296875
+    },
+    "test_base_en_vs_mix": {
+      "n_intents": 80,
+      "only_other": 21,
+      "only_en": 4,
+      "p_value": 0.0009105205535888672
+    },
+    "test_steered_en_vs_es": {
+      "n_intents": 80,
+      "only_other": 20,
+      "only_en": 2,
+      "p_value": 0.00012111663818359375
+    },
+    "test_steered_en_vs_mix": {
+      "n_intents": 80,
+      "only_other": 20,
+      "only_en": 2,
+      "p_value": 0.00012111663818359375
+    }
+  }
+}

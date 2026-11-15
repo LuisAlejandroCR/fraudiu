@@ -1,0 +1,502 @@
+{
+  "tool": "curatorkit",
+  "dedup": "exact+minhash",
+  "minhash_threshold": 0.85,
+  "clean": true,
+  "groups": {
+    "harmful_en": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    },
+    "harmful_es": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    },
+    "harmful_mix": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    },
+    "benign_en": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    },
+    "benign_es": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    },
+    "benign_mix": {
+      "input": 50,
+      "kept": 50,
+      "dropped": [],
+      "stage_counts": {
+        "JSONLReader": {
+          "output_count": 50,
+          "rejected_count": 0
+        },
+        "SchemaGate": {
+          "input_count": 50,
+          "output_count": 50,
+          "probe_recovered": 0,
+          "rejected_count": 0
+        },
+        "ExactDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "MinHashDeduplicator": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "TextCleaner": {
+          "input_count": 50,
+          "output_count": 50
+        },
+        "CorpusExporter": {
+          "exported_count": 50
+        }
+      }
+    }
+  },
+  "kept_uids": [
+    "01-b-en",
+    "01-b-es",
+    "01-b-mix",
+    "01-h-en",
+    "01-h-es",
+    "01-h-mix",
+    "02-b-en",
+    "02-b-es",
+    "02-b-mix",
+    "02-h-en",
+    "02-h-es",
+    "02-h-mix",
+    "03-b-en",
+    "03-b-es",
+    "03-b-mix",
+    "03-h-en",
+    "03-h-es",
+    "03-h-mix",
+    "04-b-en",
+    "04-b-es",
+    "04-b-mix",
+    "04-h-en",
+    "04-h-es",
+    "04-h-mix",
+    "05-b-en",
+    "05-b-es",
+    "05-b-mix",
+    "05-h-en",
+    "05-h-es",
+    "05-h-mix",
+    "06-b-en",
+    "06-b-es",
+    "06-b-mix",
+    "06-h-en",
+    "06-h-es",
+    "06-h-mix",
+    "07-b-en",
+    "07-b-es",
+    "07-b-mix",
+    "07-h-en",
+    "07-h-es",
+    "07-h-mix",
+    "08-b-en",
+    "08-b-es",
+    "08-b-mix",
+    "08-h-en",
+    "08-h-es",
+    "08-h-mix",
+    "09-b-en",
+    "09-b-es",
+    "09-b-mix",
+    "09-h-en",
+    "09-h-es",
+    "09-h-mix",
+    "10-b-en",
+    "10-b-es",
+    "10-b-mix",
+    "10-h-en",
+    "10-h-es",
+    "10-h-mix",
+    "11-b-en",
+    "11-b-es",
+    "11-b-mix",
+    "11-h-en",
+    "11-h-es",
+    "11-h-mix",
+    "12-b-en",
+    "12-b-es",
+    "12-b-mix",
+    "12-h-en",
+    "12-h-es",
+    "12-h-mix",
+    "13-b-en",
+    "13-b-es",
+    "13-b-mix",
+    "13-h-en",
+    "13-h-es",
+    "13-h-mix",
+    "14-b-en",
+    "14-b-es",
+    "14-b-mix",
+    "14-h-en",
+    "14-h-es",
+    "14-h-mix",
+    "15-b-en",
+    "15-b-es",
+    "15-b-mix",
+    "15-h-en",
+    "15-h-es",
+    "15-h-mix",
+    "16-b-en",
+    "16-b-es",
+    "16-b-mix",
+    "16-h-en",
+    "16-h-es",
+    "16-h-mix",
+    "17-b-en",
+    "17-b-es",
+    "17-b-mix",
+    "17-h-en",
+    "17-h-es",
+    "17-h-mix",
+    "18-b-en",
+    "18-b-es",
+    "18-b-mix",
+    "18-h-en",
+    "18-h-es",
+    "18-h-mix",
+    "19-b-en",
+    "19-b-es",
+    "19-b-mix",
+    "19-h-en",
+    "19-h-es",
+    "19-h-mix",
+    "20-b-en",
+    "20-b-es",
+    "20-b-mix",
+    "20-h-en",
+    "20-h-es",
+    "20-h-mix",
+    "21-b-en",
+    "21-b-es",
+    "21-b-mix",
+    "21-h-en",
+    "21-h-es",
+    "21-h-mix",
+    "22-b-en",
+    "22-b-es",
+    "22-b-mix",
+    "22-h-en",
+    "22-h-es",
+    "22-h-mix",
+    "23-b-en",
+    "23-b-es",
+    "23-b-mix",
+    "23-h-en",
+    "23-h-es",
+    "23-h-mix",
+    "24-b-en",
+    "24-b-es",
+    "24-b-mix",
+    "24-h-en",
+    "24-h-es",
+    "24-h-mix",
+    "25-b-en",
+    "25-b-es",
+    "25-b-mix",
+    "25-h-en",
+    "25-h-es",
+    "25-h-mix",
+    "26-b-en",
+    "26-b-es",
+    "26-b-mix",
+    "26-h-en",
+    "26-h-es",
+    "26-h-mix",
+    "27-b-en",
+    "27-b-es",
+    "27-b-mix",
+    "27-h-en",
+    "27-h-es",
+    "27-h-mix",
+    "28-b-en",
+    "28-b-es",
+    "28-b-mix",
+    "28-h-en",
+    "28-h-es",
+    "28-h-mix",
+    "29-b-en",
+    "29-b-es",
+    "29-b-mix",
+    "29-h-en",
+    "29-h-es",
+    "29-h-mix",
+    "30-b-en",
+    "30-b-es",
+    "30-b-mix",
+    "30-h-en",
+    "30-h-es",
+    "30-h-mix",
+    "31-b-en",
+    "31-b-es",
+    "31-b-mix",
+    "31-h-en",
+    "31-h-es",
+    "31-h-mix",
+    "32-b-en",
+    "32-b-es",
+    "32-b-mix",
+    "32-h-en",
+    "32-h-es",
+    "32-h-mix",
+    "33-b-en",
+    "33-b-es",
+    "33-b-mix",
+    "33-h-en",
+    "33-h-es",
+    "33-h-mix",
+    "34-b-en",
+    "34-b-es",
+    "34-b-mix",
+    "34-h-en",
+    "34-h-es",
+    "34-h-mix",
+    "35-b-en",
+    "35-b-es",
+    "35-b-mix",
+    "35-h-en",
+    "35-h-es",
+    "35-h-mix",
+    "36-b-en",
+    "36-b-es",
+    "36-b-mix",
+    "36-h-en",
+    "36-h-es",
+    "36-h-mix",
+    "37-b-en",
+    "37-b-es",
+    "37-b-mix",
+    "37-h-en",
+    "37-h-es",
+    "37-h-mix",
+    "38-b-en",
+    "38-b-es",
+    "38-b-mix",
+    "38-h-en",
+    "38-h-es",
+    "38-h-mix",
+    "39-b-en",
+    "39-b-es",
+    "39-b-mix",
+    "39-h-en",
+    "39-h-es",
+    "39-h-mix",
+    "40-b-en",
+    "40-b-es",
+    "40-b-mix",
+    "40-h-en",
+    "40-h-es",
+    "40-h-mix",
+    "41-b-en",
+    "41-b-es",
+    "41-b-mix",
+    "41-h-en",
+    "41-h-es",
+    "41-h-mix",
+    "42-b-en",
+    "42-b-es",
+    "42-b-mix",
+    "42-h-en",
+    "42-h-es",
+    "42-h-mix",
+    "43-b-en",
+    "43-b-es",
+    "43-b-mix",
+    "43-h-en",
+    "43-h-es",
+    "43-h-mix",
+    "44-b-en",
+    "44-b-es",
+    "44-b-mix",
+    "44-h-en",
+    "44-h-es",
+    "44-h-mix",
+    "45-b-en",
+    "45-b-es",
+    "45-b-mix",
+    "45-h-en",
+    "45-h-es",
+    "45-h-mix",
+    "46-b-en",
+    "46-b-es",
+    "46-b-mix",
+    "46-h-en",
+    "46-h-es",
+    "46-h-mix",
+    "47-b-en",
+    "47-b-es",
+    "47-b-mix",
+    "47-h-en",
+    "47-h-es",
+    "47-h-mix",
+    "48-b-en",
+    "48-b-es",
+    "48-b-mix",
+    "48-h-en",
+    "48-h-es",
+    "48-h-mix",
+    "49-b-en",
+    "49-b-es",
+    "49-b-mix",
+    "49-h-en",
+    "49-h-es",
+    "49-h-mix",
+    "50-b-en",
+    "50-b-es",
+    "50-b-mix",
+    "50-h-en",
+    "50-h-es",
+    "50-h-mix"
+  ]
+}

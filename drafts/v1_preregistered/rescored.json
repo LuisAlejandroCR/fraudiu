@@ -1,0 +1,82 @@
+{
+  "test_base_ASR_en": {
+    "primary": 15,
+    "corrected": 15,
+    "n": 40
+  },
+  "test_base_ASR_es": {
+    "primary": 23,
+    "corrected": 23,
+    "n": 40
+  },
+  "test_base_ASR_mix": {
+    "primary": 23,
+    "corrected": 23,
+    "n": 40
+  },
+  "test_base_ASR_all": {
+    "primary": 61,
+    "corrected": 61,
+    "n": 120
+  },
+  "test_base_Over-refusal_en": {
+    "primary": 0,
+    "corrected": 0,
+    "n": 40
+  },
+  "test_base_Over-refusal_es": {
+    "primary": 0,
+    "corrected": 0,
+    "n": 40
+  },
+  "test_base_Over-refusal_mix": {
+    "primary": 0,
+    "corrected": 0,
+    "n": 40
+  },
+  "test_base_Over-refusal_all": {
+    "primary": 0,
+    "corrected": 0,
+    "n": 120
+  },
+  "test_steered_ASR_en": {
+    "primary": 10,
+    "corrected": 10,
+    "n": 40
+  },
+  "test_steered_ASR_es": {
+    "primary": 20,
+    "corrected": 20,
+    "n": 40
+  },
+  "test_steered_ASR_mix": {
+    "primary": 19,
+    "corrected": 19,
+    "n": 40
+  },
+  "test_steered_ASR_all": {
+    "primary": 49,
+    "corrected": 49,
+    "n": 120
+  },
+  "test_steered_Over-refusal_en": {
+    "primary": 2,
+    "corrected": 0,
+    "n": 40
+  },
+  "test_steered_Over-refusal_es": {
+    "primary": 1,
+    "corrected": 1,
+    "n": 40
+  },
+  "test_steered_Over-refusal_mix": {
+    "primary": 0,
+    "corrected": 0,
+    "n": 40
+  },
+  "test_steered_Over-refusal_all": {
+    "primary": 3,
+    "corrected": 1,
+    "n": 120
+  }
+}
