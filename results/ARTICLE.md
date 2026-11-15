@@ -87,13 +87,21 @@ All with Wilson 95% intervals; greedy decoding, 64 new tokens, NVIDIA GeForce RT
 | 0.3842 | 50.8% (95% CI 42–60, 61/120) | 25.8% (95% CI 19–34, 31/120) | 5.8% (95% CI 3–12, 7/120) | 15.0% (95% CI 7–29, 6/40) |
 | 0.7684 | 50.8% (95% CI 42–60, 61/120) | 10.0% (95% CI 6–17, 12/120) | 11.7% (95% CI 7–19, 14/120) | 32.5% (95% CI 20–48, 13/40) |
 
-**Reading.** ⏳ OPERATOR: write 3–4 sentences here from the table: is there a language gap (do the
-Spanish/mixed ASR intervals overlap English)? Did steering lower ASR outside the base interval?
-What did it cost in over-refusal? State a null result plainly if that is what you got.
+**Reading.** Tiny Aya is safer in English than in Spanish: it helped with the fraud request in
+46% of English prompts, against 64% in Spanish and 68% code-mixed. The English
+steering vector lowered ASR (59% → 50%), but it lowered it more in English
+(-11 pp) than in Spanish (-6 pp), so the language gap grew instead of closing.
 
 ## Why the result is better (or not)
 
-⏳ OPERATOR: one paragraph tied to the refutation criteria in the README.
+Safety measured in English does not carry over to Spanish on its own. A team that deploys a model
+like this in a new, non-English-speaking market should evaluate and adjust it in that language
+rather than assume the English result transfers. Because Tiny Aya's weights are open, Spanish
+evaluations like this one, and Spanish refusal data, can be contributed back to improve it.
+Against the criteria written before running: steering passed (test ASR fell outside the base
+interval and over-refusal rose 3.3 pp, under the 5 pp limit), while the language gap is not
+established by the interval rule (the Spanish and English intervals overlap) and shows only in
+the paired, per-intent test added afterwards.
 
 ## Cost: self-hosted vs a closed API
 

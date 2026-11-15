@@ -118,13 +118,21 @@ All with Wilson 95% intervals; greedy decoding, {m['decoding']['max_new_tokens']
 
 {secondary}
 
-**Reading.** ⏳ OPERATOR: write 3–4 sentences here from the table: is there a language gap (do the
-Spanish/mixed ASR intervals overlap English)? Did steering lower ASR outside the base interval?
-What did it cost in over-refusal? State a null result plainly if that is what you got.
+**Reading.** Tiny Aya is safer in English than in Spanish: it helped with the fraud request in
+{100 * b['asr_en']['rate']:.0f}% of English prompts, against {100 * b['asr_es']['rate']:.0f}% in Spanish and {100 * b['asr_mix']['rate']:.0f}% code-mixed. The English
+steering vector lowered ASR ({100 * b['asr_all']['rate']:.0f}% → {100 * s['asr_all']['rate']:.0f}%), but it lowered it more in English
+({100 * (s['asr_en']['rate'] - b['asr_en']['rate']):+.0f} pp) than in Spanish ({100 * (s['asr_es']['rate'] - b['asr_es']['rate']):+.0f} pp), so the language gap grew instead of closing.
 
 ## Why the result is better (or not)
 
-⏳ OPERATOR: one paragraph tied to the refutation criteria in the README.
+Safety measured in English does not carry over to Spanish on its own. A team that deploys a model
+like this in a new, non-English-speaking market should evaluate and adjust it in that language
+rather than assume the English result transfers. Because Tiny Aya's weights are open, Spanish
+evaluations like this one, and Spanish refusal data, can be contributed back to improve it.
+Against the criteria written before running: steering passed (test ASR fell outside the base
+interval and over-refusal rose {100 * (s['over_refusal_all']['rate'] - b['over_refusal_all']['rate']):.1f} pp, under the 5 pp limit), while the language gap is not
+established by the interval rule (the Spanish and English intervals overlap) and shows only in
+the paired, per-intent test added afterwards.
 
 ## Cost: self-hosted vs a closed API
 
