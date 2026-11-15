@@ -23,9 +23,9 @@ def main(argv=None) -> Path:
     ap.add_argument("--tokens-per-message", type=int, default=150)
     ap.add_argument("--github", default="https://github.com/LuisAlejandroCR/fraudiu")
     ap.add_argument("--hf-user", default="<hf-user>")
-    ap.add_argument("--replication", default="drafts/v1_preregistered",
+    ap.add_argument("--replication", default="runs/v1_preregistered",
                     help="earlier pre-registered run on the first 50 intents, reported as a replication")
-    ap.add_argument("--exploratory", nargs="*", default=["drafts/exploratory_f0.01", "drafts/exploratory_f0.02"],
+    ap.add_argument("--exploratory", nargs="*", default=["runs/exploratory_f0.01", "runs/exploratory_f0.02"],
                     help="runs with a hand-fixed strength, reported as exploratory only")
     a = ap.parse_args(argv)
 

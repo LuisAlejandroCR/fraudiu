@@ -93,8 +93,8 @@ def publish_results(api, user: str, ds_id: str, model_id: str, results: Path, gi
             if (results / name).exists():
                 (tmp / name).write_bytes((results / name).read_bytes())
         # Replication (v1) and exploratory runs: labels and numbers only, never private/.
-        drafts = ROOT / "drafts"
-        for d in sorted(drafts.glob("*")) if drafts.is_dir() else []:
+        runs = ROOT / "runs"
+        for d in sorted(runs.glob("*")) if runs.is_dir() else []:
             if not d.is_dir() or d.name.startswith("v2"):
                 continue
             for name in ("metrics.json", "per_item.csv", "REPORT.md", "PAIRED.md", "paired.json",
